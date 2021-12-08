@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/56958421/pip-install-geopandas-on-windows/60936148
