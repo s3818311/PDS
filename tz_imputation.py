@@ -14,7 +14,6 @@ def get_tz(lat, lng):
 
     today = datetime.now()
     tz_target = timezone(tf.certain_timezone_at(lng=lng, lat=lat))
-    # ATTENTION: tz_target could be None! handle error case
     today_target = tz_target.localize(today)
     today_utc = utc.localize(today)
     utc_offset = int((today_utc - today_target).total_seconds() / 60 / 60)
